@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/devops-form-app-gitops.git
+    repoURL: https://github.com/sahare9422/devops-form-app-gitops.git
     targetRevision: HEAD
     path: charts/mongodb
   destination:
