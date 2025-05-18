@@ -26,13 +26,10 @@ tolerations: []
 affinity: {}
 
 ingress:
-  enabled: false
-  className: ""
-  annotations: {}
+  enabled: true
   hosts:
-    - host: chart-example.local
+    - host: frontend.local
       paths:
         - path: /
           pathType: ImplementationSpecific
-  tls: []
 
