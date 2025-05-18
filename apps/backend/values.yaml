@@ -1,0 +1,19 @@
+replicaCount: 1
+
+image:
+  repository: palash9422/form-backend
+  tag: v1
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3000
+
+containerPort: 3000
+
+env:
+  - name: MONGODB_URL
+    value: mongodb://form-mongodb:27017/formdb
+
+resources: {}
+
