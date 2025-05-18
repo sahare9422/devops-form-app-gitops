@@ -14,3 +14,14 @@ ingress:
 
 resources: {}
 
+serviceAccount:
+  create: true
+  name: ""
+
+autoscaling:
+  enabled: false
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
