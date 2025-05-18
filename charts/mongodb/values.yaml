@@ -1,6 +1,7 @@
 serviceAccount:
   create: true
   name: ""
+  automount: true 
 
 replicaCount: 1
 
