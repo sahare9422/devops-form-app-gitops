@@ -17,3 +17,8 @@ persistence:
   # size: 1Gi
   # storageClass: ""
 
+
+serviceAccount:
+  create: false
+  name: ""
+
