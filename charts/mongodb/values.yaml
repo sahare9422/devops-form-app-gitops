@@ -1,3 +1,7 @@
+serviceAccount:
+  create: true
+  name: ""
+
 replicaCount: 1
 
 image:
@@ -17,8 +21,4 @@ persistence:
   # size: 1Gi
   # storageClass: ""
 
-
-serviceAccount:
-  create: false
-  name: ""
 
