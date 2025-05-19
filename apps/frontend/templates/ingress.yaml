@@ -15,8 +15,9 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: {{ include "frontend.fullname" . }}
-                port:
-                  number: 3000
+               name: {{ include "frontend.fullname" . }}
+               port:
+                 number: 80
+
 {{- end }}
 
