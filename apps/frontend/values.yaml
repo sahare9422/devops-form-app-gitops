@@ -1,5 +1,10 @@
 replicaCount: 1
 
+env:
+  - name: BACKEND_URL
+    value: http://backend.backend.svc.cluster.local:3000
+  
+
 image:
   repository: palash9422/form-frontend       # your Docker Hub repo for frontend image
   tag: v1                                  # the tag you pushed
