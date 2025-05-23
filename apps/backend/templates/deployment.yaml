@@ -34,9 +34,16 @@ spec:
       securityContext:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      
       containers:
         - name: {{ .Chart.Name }}
-          env: {{- toYaml .Values.env | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env: {{- toYaml .Values.env | nindent 14 }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.containerPort }}
+              protocol: TCP
 
           {{- with .Values.securityContext }}
           securityContext:
