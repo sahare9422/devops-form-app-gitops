@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: palash9422/form-backend
-  tag: v13
+  tag: v12
   pullPolicy: IfNotPresent
 
 service:
