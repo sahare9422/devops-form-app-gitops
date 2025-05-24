@@ -7,7 +7,7 @@ env:
 
 image:
   repository: palash9422/form-frontend       # your Docker Hub repo for frontend image
-  tag: v4                                  # the tag you pushed
+  tag: v5                                  # the tag you pushed
   pullPolicy: IfNotPresent
 
 service:
